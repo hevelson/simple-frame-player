@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -14,8 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +27,78 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.player-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-container {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+.image-frame {
+  display: block;
+  width: 100%;
+}
+
+.commands {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.progress-container {
+  display: block;
+  min-width: 80vw;
+  max-width: 600px;
+  height: 30px;
+  background-color: #684756;
+  margin: 20px auto;
+}
+.progress-container .progress-bar {
+  display: block;
+  background-color: #96705B;
+  height: 30px;
+  width: 0%;
+}
+
+.btn-default {
+  background-color: #684756;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+}
+
+.play-icon {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 14px solid #2c2c2c;
+}
+
+.pause-icon {
+  display: block;
+  width: 4px;
+  height: 14px;
+  border-left: 4px solid #2c2c2c;
+  border-right: 4px solid #2c2c2c;
+}
+
+.stop-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #2c2c2c;
 }
 
 @keyframes App-logo-spin {
